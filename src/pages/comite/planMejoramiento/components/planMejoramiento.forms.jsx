@@ -5,11 +5,11 @@ import { useNavigate } from 'react-router-dom';
 
 const FinalizarPlan = ({ motivosC, decisiones, aprendices, competencias, resultadosA, planes, ids, user, deleteP,plan, updateP}) => {;
 
-   const navigate = useNavigate()
-   const [planMejoramiento, setPlanMejoramiento] = useState(plan)
+   //const navigate = useNavigate()
+  // const [planMejoramiento, setPlanMejoramiento] = useState(plan)
    const [aprendizPlan, setAprendizPlan] = useState([])
    const [planMejora, setplanMejora] = useState([])
-   const [getFinalizar, setGetFinalizar] = useState(planes)
+   const [getFinalizar] = useState(planes)
    const [archivo, setArchivo] = useState(null)
    const [formData, setFormData] = useState({
       aprendiz: getFinalizar.aprendizPlanMejoramiento.nombre,
@@ -56,10 +56,10 @@ const FinalizarPlan = ({ motivosC, decisiones, aprendices, competencias, resulta
 
    }
 
-   const handleFileChange = (e) => {
-      const selectorArchivo = e.target.files[0]
-      setArchivo(selectorArchivo)
-   }
+   // const handleFileChange = (e) => {
+   //    const selectorArchivo = e.target.files[0]
+   //    setArchivo(selectorArchivo)
+   // }
 
 
 

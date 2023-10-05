@@ -44,9 +44,7 @@ const filtrarPlanes = (plan) => {
       obtenerPlanes()
    }, [])
 
-   const styles = {
-      modalWidth: "50px"
-   }
+   
 
    // const handleEliminar = (id) =>{
    //    // e.preventDefaul()
@@ -55,7 +53,7 @@ const filtrarPlanes = (plan) => {
    // }
 
    const updatePlan = async (id) => {
-      const updateplan = await update(`plan-mejoramiento/inactivo/${id}`)
+      //const updateplan = await update(`plan-mejoramiento/inactivo/${id}`)
       console.log(id)
       setPlanesM(plan.filter((i) => i.idPlanMejoramiento === id));
    }
