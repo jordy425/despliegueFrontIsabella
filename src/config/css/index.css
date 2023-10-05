@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   /* ----- CORPORATIVOS ----- */
+   --cor-1: #006e3c;
+   --cor-2: #008550;
+   --cor-3: #39a900;
+   --cor-4: #88cb66;
+   --cor-5: #c3e5b2;
+
+   /* ----- PRINCIPAL ----- */
+   --pri-1: #001629;
+   --pri-2: #002340;
+   --pri-3: #00314d;
+   --pri-4: #668494;
+   --pri-5: #b2c1c9;
+
+   --pri-6: #3dbac4;
+   --pri-7: #56ccdd;
+   --pri-8: #82ddef;
+   --pri-9: #b4ebf5;
+   --pri-10: #d9f5fa;
+
+   --pri-11: #d8d6b2;
+   --pri-12: #ededcc;
+   --pri-13: #fcfced;
+   --pri-14: #fdfdf6;
+
+   /* ----- COMPLEMENTARIA ----- */
+   --com-1: #142823;
+   --com-2: #26443f;
+   --com-3: #385b56;
+   --com-4: #879d9a;
+   --com-5: #c3cecc;
+
+   --com-6: #9b4c42;
+   --com-7: #b26356;
+   --com-8: #cc7766;
+   --com-9: #e0ada3;
+   --com-10: #efd6d1;
+
+   --com-11: #fbad20;
+   --com-12: #febd3b;
+   --com-13: #ffd04e;
+   --com-14: #ffe196;
+   --com-15: #ffeec8;
+
+   /* ----- NEUTROS ----- */
+   --neutros-1: #231f20;
+   --neutros-2: #58595b;
+   --neutros-3: #808285;
+   --neutros-4: #a7a9ac;
+   --neutros-5: #d1d3d4;
+   --neutros-6: #ffffff;
+   --neutros-7: #000000;
+}
+
+#logo-sidebar {
+   background: var(--cor-3);
+   color: var(--neutros-6);
+   border-right: var(--neutros-4) solid 1px;
+}
+
+#logo-navbar {
+   background: var(--neutros-6);
+   color: var(--neutros-7);
+   box-shadow: rgba(0, 0, 0, 0.06) 0px 5px 5px -3px, rgba(0, 0, 0, 0.043) 0px 8px 10px 1px, rgba(0, 0, 0, 0.035) 0px 3px 14px 2px;
+}
+
+#body-content {
+   background: #fafafa;
+}
+
+#session-user {
+   background: var(--cor-5);
+}
+
+.ss-header {
+   background: var(--cor-3);
+   border-bottom: var(--neutros-5) solid 1px;
+}
+
+.ss-modules {
+   color: var(--com-5);
+}
+
+.scc-head {
+   color: var(--neutros-6);
+   background: var(--cor-3);
+}
+
+.ss-modules:hover, .ss-modules-active, #session-user:hover {
+   background: var(--cor-4);
+   color: var(--neutros-6);
+}
+
+.ss-items {
+   color: var(--neutros-6);
+}
+
+.ss-items:hover, .ss-active {
+   background: var(--cor-5);
+   color: var(--neutros-1);
+}
+
+.s-button-create {
+   background: var(--neutros-2);
+   color: var(--neutros-5);
+}
+
+.s-button-create:hover {
+   background: var(--neutros-3);
+   color: var(--neutros-6);
+}
+
+.s-button-cancel {
+   background: var(--com-7);
+   color: var(--neutros-5);
+}
+
+.s-button-cancel:hover {
+   background: var(--com-6);
+   color: var(--neutros-6);
+}
+
+.s-button-edit {
+   background: var(--pri-7);
+   color: var(--neutros-2);
+}
+
+.s-button-edit:hover {
+   background: var(--pri-6);
+   color: var(--neutros-1);
+}
+
+.s-button-consult {
+   background: var(--com-12);
+   color: var(--neutros-2);
+}
+
+.s-button-consult:hover {
+   background: var(--com-11);
+   color: var(--neutros-1);
+}
+
+.s-button-success {
+   background: var(--cor-3);
+   color: var(--neutros-6);
+}
+
+.s-button-success:hover {
+   background: var(--cor-4);
+   color: var(--neutros-6);
+}
+.s-button-others {
+   background: var(--com-2);
+   color: var(--neutros-5);
+}
+
+.s-button-others:hover {
+   background: var(--com-3);
+   color: var(--neutros-6);
+}
+
+.sm-cancel {
+   background: var(--com-7);
+   color: var(--neutros-6);
+}
+
+.smc-success {
+   background: var(--cor-3);
+   color: var(--neutros-6);
+}
+
+.st-head, .st-pagination {
+   background: var(--cor-3);
+   color: var(--neutros-6)
+}
+
+.st-consult {
+   background: var(--pri-9);
+   color: var(--neutros-1);
+}
