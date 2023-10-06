@@ -1,16 +1,15 @@
 import React, { Fragment, useEffect, useMemo, useState } from 'react';
 import { get, create, uploadFiles } from '../../../../config/Api/api';
 import Swal from 'sweetalert2';
-import { useNavigate } from 'react-router-dom';
 
 const FinalizarPlan = ({ motivosC, decisiones, aprendices, competencias, resultadosA, planes, ids, user, deleteP,plan, updateP}) => {;
 
-   //const navigate = useNavigate()
+
   // const [planMejoramiento, setPlanMejoramiento] = useState(plan)
    const [aprendizPlan, setAprendizPlan] = useState([])
    const [planMejora, setplanMejora] = useState([])
    const [getFinalizar] = useState(planes)
-   const [archivo, setArchivo] = useState(null)
+   const [archivo] = useState(null)
    const [formData, setFormData] = useState({
       aprendiz: getFinalizar.aprendizPlanMejoramiento.nombre,
       competencia: getFinalizar.quejaPlanMejoramiento.competenciaQueja.nombreCompetencia,

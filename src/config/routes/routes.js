@@ -1,6 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import DashboardLayout from "../../layout/DashboardLayout";
-import { Administrador, Aprendices, Comite, ComiteCitado,  CrearComite, EntregaFicha, Fichas, InfoFicha, InitialPage, Login, NotFound, PlanMejoramiento, ProgramaCoordinacion, ProgramasFormativos, QuejasComite, Roles, Usuarios, Gestion, ProyectosFormativos, GrupoProyecto, GrupoFicha, Perfil, ConsultarAprendiz, ComiteConsultado, ObservacionesAprendiz, ConsultarEntrega } from "../../pages";
+import { Administrador, Aprendices, Comite, ComiteCitado,  CrearComite, EntregaFicha, Fichas, InfoFicha, InitialPage, Login, NotFound, PlanMejoramiento, ProgramaCoordinacion, QuejasComite, Roles, Usuarios, Gestion, ProyectosFormativos, GrupoProyecto, GrupoFicha, Perfil, ConsultarAprendiz, ComiteConsultado, ObservacionesAprendiz, ConsultarEntrega } from "../../pages";
 import jwt_decode from "jwt-decode";
 import CreateRole from "../../pages/configuracion/roles/CreateRole";
 import UpdateRole from "../../pages/configuracion/roles/UpdateRole";

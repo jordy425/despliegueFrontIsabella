@@ -144,8 +144,8 @@ import Swal from 'sweetalert2';
 import jwt_decode from "jwt-decode"
 
 const QuejaCitado = ({quejasC}) => {
-  const [token, setToken] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
-   const [user, setUser] = useState(token.userInfo);
+  const [token] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
+   const [user] = useState(token.userInfo);
    const [queja, setQueja] = useState([])
 
    useEffect(() => {
@@ -247,9 +247,7 @@ const QuejaCitado = ({quejasC}) => {
       }
    ];
 
-   const styles = {
-      modalWidth: "50px"
-   }
+   
 
    const configTable = {
       initialRows: 5,

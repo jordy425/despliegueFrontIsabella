@@ -12,7 +12,7 @@ import QuejaFinalizado from "./separadosMotivos/quejaFinalizado";
 const QuejasComite = () => {
    // eslint-disable-next-line
    const [token, setToken] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
-   const [user, setUser] = useState(token.userInfo);
+   const [user] = useState(token.userInfo);
    const [queja, setQueja] = useState([])
    const [ficha, setFichas] = useState([])
    const [motivos, setMotivos] = useState([])
@@ -26,7 +26,6 @@ const QuejasComite = () => {
    const [citado, setCitado] = useState([])
    const [enProceso, setEnProceso] = useState([])
    const [finalizada, setFinalizada] = useState([])
-   const [desercion, setDesercion] = useState([])
 
    // console.log("MIrar queja: ", decision)
 

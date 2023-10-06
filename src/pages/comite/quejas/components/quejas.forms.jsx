@@ -1422,8 +1422,8 @@ import * as XLSX from 'xlsx';
 
 const CreateQueja = ({ decision, observa, claves }) => {
    // eslint-disable-next-line
-   const [token, setToken] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
-   const [user, setUser] = useState(token.userInfo);
+   const [token] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
+   const [user] = useState(token.userInfo);
    // console.log(user)
    const [formData, setFormData] = useState({
       fichas: "",
@@ -1768,9 +1768,9 @@ const CreateQueja = ({ decision, observa, claves }) => {
 }
 
 const ConsultarQuejas = ({ queja }) => {
-   const [token, setToken] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
-   const [user, setUser] = useState(token.userInfo);
-   const [Quejas, setQuejas] = useState(queja)
+   const [token] = useState(jwt_decode(localStorage.getItem("tokenJWT")))
+   const [user] = useState(token.userInfo);
+   const [Quejas] = useState(queja)
    const [formData, setFormData] = useState({
       aprendiz: Quejas.aprendizQueja,
       ficha: Quejas.aprendizQueja.fichaAprendiz.codigoFicha,
